@@ -59,7 +59,7 @@ const HotCollections = () => {
       setPost(res.data);
     });
 
-    // settingLoadingState()
+    settingLoadingState()
   }, []);
 
   return (
