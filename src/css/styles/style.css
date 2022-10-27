@@ -13322,6 +13322,32 @@ a.read_more i {
   right: 5px;
 }
 
+.nft_coll_info-loading{
+  width: 80px;
+  margin: 0 auto;
+}
+
+.nft_coll_info-title-loading{
+  width: 80px;
+  height: 16px;  
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+
+}
+.nft_coll_info-description-loading{
+  width: 60px;
+  height: 16px;  
+  margin-top: 8px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+
 .nft_coll_pp img {
   width: 60px;
   height: auto;
