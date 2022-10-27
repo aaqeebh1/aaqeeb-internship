@@ -13220,6 +13220,40 @@ a.read_more i {
   -webkit-border-radius: 10px 10px 0 0;
 }
 
+.nft_wrap_loading {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;  
+    background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+
+  }
+
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+  
+  
+
 .nft_coll:hover img {
   transform: scale(1.05);
 }
@@ -13256,6 +13290,62 @@ a.read_more i {
   margin-top: -30px;
   margin-bottom: 10px;
   position: relative;
+}
+.nft_coll_pp_loading {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+
+.nft_coll_pp_loading i {
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #333;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  padding: 3px;
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+}
+
+.nft_coll_info-loading{
+  width: 80px;
+  margin: 0 auto;
+}
+
+.nft_coll_info-title-loading{
+  width: 80px;
+  height: 16px;  
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+
+}
+.nft_coll_info-description-loading{
+  width: 60px;
+  height: 16px;  
+  margin-top: 8px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
 }
 
 .nft_coll_pp img {
