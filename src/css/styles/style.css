@@ -13309,6 +13309,8 @@ a.read_more i {
     animation: AnimationName 5s linear  infinite;
 }
 
+
+
 .nft_coll_pp_loading i {
   font-size: 10px;
   color: #ffffff;
@@ -13395,6 +13397,29 @@ a.read_more i {
   z-index: 10;
 }
 
+.author_list_pp--loading{
+  margin-top: 2px;
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+  z-index: 10;
+
+}
+.pp-coll_loading {
+  width: 60px;
+  height: 60px;
+  border-radius: 100% !important;
+  position: relative;
+  z-index: 1;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+
 .author_list_pp img {
   width: 100%;
   border-radius: 100% !important;
@@ -13402,6 +13427,20 @@ a.read_more i {
   -webkit-border-radius: 100% !important;
   position: relative;
   z-index: 1;
+}
+
+.author_list_pp--loading i {
+  color: #ffffff;
+  font-size: 10px;
+  padding: 3px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  z-index: 2;
+  background-color: #8364E2;
 }
 
 .author_list_pp a:hover img {
@@ -13756,6 +13795,17 @@ a.read_more i {
 
 .nft__item:hover img.nft__item_preview {
   transform: scale(1.03);
+}
+
+.nft__item_preview--loading{
+  height: 259.5px;
+  width: 259.5px;
+  border-radius: 10px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
 }
 
 .nft__item_wrap {
@@ -14269,6 +14319,25 @@ a.read_more i {
 .dark-scheme .de_countdown {
   color: #fff;
   background: none;
+}
+
+.de_countdown--loading{
+  width: 112px;
+  height: 25px;
+  position: absolute;
+  right: 20px;
+  background: #ffffff;
+  padding: 1px 10px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border: solid 1px grey;
+  z-index: 100;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
 }
 
 .text-light .de_countdown {
