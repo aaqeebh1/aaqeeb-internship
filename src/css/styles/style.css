@@ -13314,7 +13314,7 @@ a.read_more i {
 .nft_coll_pp_loading i {
   font-size: 10px;
   color: #ffffff;
-  background-color: #333;
+  background-color: #8364E2;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -13322,6 +13322,7 @@ a.read_more i {
   position: absolute;
   bottom: 4px;
   right: 5px;
+  z-index: 2;
 }
 
 .nft_coll_info-loading{
@@ -13420,6 +13421,8 @@ a.read_more i {
     animation: AnimationName 5s linear  infinite;
 }
 
+
+
 .author_list_pp img {
   width: 100%;
   border-radius: 100% !important;
@@ -13430,17 +13433,17 @@ a.read_more i {
 }
 
 .author_list_pp--loading i {
-  color: #ffffff;
   font-size: 10px;
-  padding: 3px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  color: #ffffff;
+  background-color: #8364E2;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
+  padding: 3px;
+  position: absolute;
+  bottom: 4px;
+  right: -3px;
   z-index: 2;
-  background-color: #8364E2;
 }
 
 .author_list_pp a:hover img {
@@ -13799,7 +13802,7 @@ a.read_more i {
 
 .nft__item_preview--loading{
   height: 259.5px;
-  width: 259.5px;
+  width: 95%;
   border-radius: 10px;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
     background-size: 300% 500%;

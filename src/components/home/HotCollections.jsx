@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import AuthorImage from "../../images/author_thumbnail.jpg";
-import nftImage from "../../images/nftImage.jpg";
 import axios from "axios";
 import { useState } from "react";
 import OwlCarousel from "react-owl-carousel";
@@ -11,8 +9,8 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 const HotCollections = () => {
   const baseUrl =
     "https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections";
-  const [post, setPost] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [post, setPost] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   const options = {
     margin: 30,
@@ -41,25 +39,14 @@ const HotCollections = () => {
     },
   };
 
-  const settingLoadingState = () => {
-    if (!loading) {
-      setLoading(true)
-      setTimeout(() => {
-        setLoading(false)
-      }, 1000)
-    } else {
-      setTimeout(() => {
-        setLoading(false)
-      }, 1000)
-    }
-  }
-
   useEffect(() => {
+    setLoading(true);
     axios.get(`${baseUrl}`).then((res) => {
       setPost(res.data);
     });
-
-    settingLoadingState()
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
   }, []);
 
   return (
@@ -73,8 +60,25 @@ const HotCollections = () => {
             </div>
           </div>
           <OwlCarousel className="slider-items owl-carousel" {...options}>
-            {post
-              ? post.map((post, index) => (
+            {!loading
+              ? new Array(6).fill(0).map((_, index) => (
+                  <div className="" key={index}>
+                    <div className="nft_coll">
+                      <div className="nft_wrap_loading"></div>
+                      <div className="nft_coll_pp_loading">
+                        <Link to="/author">
+                          <div className="pp-coll_loading" alt=""></div>
+                        </Link>
+                        <i className="fa fa-check"></i>
+                      </div>
+                      <div className="nft_coll_info-loading">
+                        <div className="nft_coll_info-title-loading"></div>
+                        <div className="nft_coll_info-description-loading"></div>
+                      </div>
+                    </div>
+                  </div>
+                ))
+              : post?.map((post, index) => (
                   <div className=" " key={index}>
                     <div className="nft_coll">
                       <div className="nft_wrap ">
@@ -101,27 +105,6 @@ const HotCollections = () => {
                           <h4>{post.title}</h4>
                         </Link>
                         <span>ERC-{post.code}</span>
-                      </div>
-                    </div>
-                  </div>
-                ))
-              : new Array(6).fill(0).map((_, index) => (
-                  <div className="" key={index}>
-                    <div className="nft_coll">
-                      <div className="nft_wrap_loading">                        
-                      </div>
-                      <div className="nft_coll_pp_loading">
-                        <Link to="/author">
-                          <div
-                            className="pp-coll_loading"
-                            alt=""
-                          ></div>
-                        </Link>
-                        <i className="fa fa-check"></i>
-                      </div>
-                      <div className="nft_coll_info-loading">
-                          <div className="nft_coll_info-title-loading"></div>
-                        <div className="nft_coll_info-description-loading"></div>
                       </div>
                     </div>
                   </div>
