@@ -14412,6 +14412,49 @@ a.read_more i {
   -webkit-border-radius: 100%;
 }
 
+.author_img--loading{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+.author_name--loading{
+  width: 150px;
+  height: 18px;
+  
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+
+.profile_username--loading{
+  width: 120px;
+  height: 18px;
+  margin-top: 8px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+
+.profile_wallet--loading{
+  width: 250px;
+  height: 18px;
+  margin-top: 8px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+    background-size: 300% 500%;
+    -webkit-animation: AnimationName 5s linear infinite;
+    -moz-animation: AnimationName 5s linear  infinite;
+    animation: AnimationName 5s linear  infinite;
+}
+
 .profile_name {
   margin-left: 20px;
 }
