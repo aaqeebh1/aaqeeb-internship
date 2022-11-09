@@ -8,32 +8,7 @@ const Skeleton = ({itemNo, className}) => {
 
   let skeltonArray = new Array(itemNo).fill(0)
 
-  const options = {
-    margin: 30,
-    responsiveClass: true,
-    nav: true,
-    autoplay: false,
-    navText: ["<", ">"],
-    smartSpeed: 600,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      700: {
-        items: 3,
-      },
-      1000: {
-        items: 4,
-      },
-    },
-  };
+  
   
   return (
     
