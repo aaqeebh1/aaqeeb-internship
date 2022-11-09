@@ -10,7 +10,7 @@ const AuthorItems = ({post}) => {
       <div className="tab-1">
         <div className="row">
           {
-            !post ? 
+            post ? 
                  ( new Array(4).fill(0).map((_, index) => (
             <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12" key={index}>
               <div className="nft__item">

@@ -26,7 +26,8 @@ const Author = () => {
       setLoading(false);
     }, 1000);;
   }, [id]);
-  console.log(post)
+
+  console.log(Object.values(post));
   return (
     <div id="wrapper">
       <div className="no-bottom no-top" id="content">
