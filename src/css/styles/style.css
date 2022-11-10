@@ -17006,3 +17006,30 @@ img {
   -moz-animation: AnimationName 5s linear infinite;
   animation: AnimationName 5s linear infinite;
 }
+
+@media  screen and (max-width:768px){
+  .skeleton_loding-Image{
+    height: 300px;
+    width: 500px;
+    margin-bottom: 10px;
+  }
+  .item_info_title--loading{
+    width: 450px;
+  }
+  .item_info_description--loading{
+    width: 400px;
+  }
+}
+@media  screen and (max-width:480px){
+  .skeleton_loding-Image{
+    height: 250px;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  .item_info_title--loading{
+    width: 300px;
+  }
+  .item_info_description--loading{
+    width: 250px;
+  }
+}
