@@ -13227,32 +13227,47 @@ a.read_more i {
   overflow: hidden;
   border-radius: 10px 10px 0 0;
   -moz-border-radius: 10px 10px 0 0;
-  -webkit-border-radius: 10px 10px 0 0;  
-    background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  -webkit-border-radius: 10px 10px 0 0;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
+}
 
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
   }
-
-  @-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 51%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-  
-  
 
 .nft_coll:hover img {
   transform: scale(1.05);
@@ -13303,18 +13318,16 @@ a.read_more i {
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
-
-
 
 .nft_coll_pp_loading i {
   font-size: 10px;
   color: #ffffff;
-  background-color: #8364E2;
+  background-color: #8364e2;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -13325,33 +13338,31 @@ a.read_more i {
   z-index: 2;
 }
 
-.nft_coll_info-loading{
+.nft_coll_info-loading {
   width: 80px;
   margin: 0 auto;
 }
 
-.nft_coll_info-title-loading{
+.nft_coll_info-title-loading {
   width: 80px;
-  height: 16px;  
+  height: 16px;
   margin-left: 10px;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
-    
-
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
-.nft_coll_info-description-loading{
+.nft_coll_info-description-loading {
   width: 60px;
-  height: 16px;  
+  height: 16px;
   margin-top: 8px;
   margin-left: 10px;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
 
 .nft_coll_pp img {
@@ -13401,7 +13412,7 @@ a.read_more i {
   z-index: 10;
 }
 
-.author_list_pp--loading{
+.author_list_pp--loading {
   margin-top: 2px;
   position: absolute;
   display: inline-block;
@@ -13409,7 +13420,6 @@ a.read_more i {
   height: auto;
   margin-left: 10px;
   z-index: 10;
-
 }
 .pp-coll_loading {
   width: 60px;
@@ -13418,13 +13428,11 @@ a.read_more i {
   position: relative;
   z-index: 1;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
-
-
 
 .author_list_pp img {
   width: 100%;
@@ -13438,7 +13446,7 @@ a.read_more i {
 .author_list_pp--loading i {
   font-size: 10px;
   color: #ffffff;
-  background-color: #8364E2;
+  background-color: #8364e2;
   border-radius: 100%;
   -moz-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -13803,15 +13811,15 @@ a.read_more i {
   transform: scale(1.03);
 }
 
-.nft__item_preview--loading{
+.nft__item_preview--loading {
   height: 259.5px;
   width: 95%;
   border-radius: 10px;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
 
 .nft__item_wrap {
@@ -14327,7 +14335,7 @@ a.read_more i {
   background: none;
 }
 
-.de_countdown--loading{
+.de_countdown--loading {
   width: 112px;
   height: 25px;
   position: absolute;
@@ -14340,10 +14348,10 @@ a.read_more i {
   border: solid 1px grey;
   z-index: 100;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
 
 .text-light .de_countdown {
@@ -14412,47 +14420,47 @@ a.read_more i {
   -webkit-border-radius: 100%;
 }
 
-.author_img--loading{
+.author_img--loading {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
-.author_name--loading{
+.author_name--loading {
   width: 150px;
   height: 18px;
-  
+
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
 
-.profile_username--loading{
+.profile_username--loading {
   width: 120px;
   height: 18px;
   margin-top: 8px;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
 
-.profile_wallet--loading{
+.profile_wallet--loading {
   width: 250px;
   height: 18px;
   margin-top: 8px;
   background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
-    background-size: 300% 500%;
-    -webkit-animation: AnimationName 5s linear infinite;
-    -moz-animation: AnimationName 5s linear  infinite;
-    animation: AnimationName 5s linear  infinite;
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
 
 .profile_name {
@@ -16928,4 +16936,73 @@ img {
 
 .no-cursor {
   cursor: not-allowed;
+}
+
+/* Skeleton detail page */
+
+.skeleton_loding-Image {
+  width: 600px;
+  height: 600px;
+  border-radius: 8px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
+}
+.item_info_views--loading {
+  margin-right: 10px;
+  height: 30px;
+  font-weight: 400;
+  padding: 2px 10px;
+  font-size: 14px;
+  text-align: center;
+  min-width: 80px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  margin-top: 10px;
+}
+
+.item_info_title--loading{
+  width: 600px;
+  height: 46px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
+}
+
+.author_list_pp--loading-details {
+  margin-top: 2px;
+  display: inline-block;
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+  z-index: 10;
+}
+.item_info_description--loading{
+  width: 600px;
+  height: 80px;
+  margin-bottom: 20px;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
+}
+
+.nft-item-price--loading{
+  margin-top: 2px;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  margin-left: 10px;
+  z-index: 10;
+  background: repeating-linear-gradient(90deg, #b4b4b4, #ececec, #b4b4b4);
+  background-size: 300% 500%;
+  -webkit-animation: AnimationName 5s linear infinite;
+  -moz-animation: AnimationName 5s linear infinite;
+  animation: AnimationName 5s linear infinite;
 }
