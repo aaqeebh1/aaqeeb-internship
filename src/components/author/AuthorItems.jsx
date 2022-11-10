@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import Skeleton from "../UI/Skeleton";
 
 
@@ -46,7 +46,7 @@ const AuthorItems = ({post, nftCollection, loading}) => {
                       </div>
                     </div>
                   </div>
-                  <Link to="/item-details">
+                  <Link to={`/item-details/${nft.nftId}`}>
                     <img
                       src={nft.nftImage}
                       className="lazy nft__item_preview"
@@ -55,7 +55,7 @@ const AuthorItems = ({post, nftCollection, loading}) => {
                   </Link>
                 </div>
                 <div className="nft__item_info">
-                  <Link to="/item-details">
+                  <Link to={`/item-details/${nft.nftId}`}>
                     <h4>{nft.title}</h4>
                   </Link>
                   <div className="nft__item_price">{nft.price} ETH</div>
