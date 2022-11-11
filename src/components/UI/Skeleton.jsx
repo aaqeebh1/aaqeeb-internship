@@ -17,6 +17,7 @@ const Skeleton = ({itemNo, className}) => {
       <div  key={index}
       className={className}
       style={{ display: "block", backgroundSize: "cover" }}
+      data-aos='fade-in' data-aos-duration="2000"
       >
         <div className="nft__item">
           <div className="author_list_pp--loading">
